@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap JS Projects 🚀🚀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/56d99cc5b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <div>
+      <p class="about">A collection of my solutions to the JavaScript roadmap projects</p>
+    </div>
+
+    <section class="projects">
+
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <div>
+        <a href="https://www.linkedin.com/in/stephanie-ugboaja/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin" title="Navigate to my personal LinkedIn"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://github.com/Ugboaja-Uchechi" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" title="Navigate to my personal GitHub"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://tired-coder.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-globe" title="Navigate to my personal portfolio"></i>
+          <span>Portfolio site</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const projectContainer = document.querySelector('.projects');
+    const projects = [
+      {
+        name: 'Tabs',
+        link: 'tabs/index.html',
+        about: 'A simple tabs component used to introduce you to DOM manipulation and event handling'
+      },
+    ];
+
+    projects.forEach((proj, index) => {
+      projectContainer.innerHTML +=
+        `
+        <div class='project'>
+          <a href='${proj.link}' target='_blank' class='proj-link'>
+            ${proj.name}
+          </a>
+          <p>${proj.about}</p>
+        </div>
+      `
+    })
+  </script>
+</body>
+
+</html>
