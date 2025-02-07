@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.tab-container {
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-block-end: 2px solid black;
+}
+
+.tab-content div {
+  display: none;
+}
+
+.tab-content .active {
+  display: block;
+}
