@@ -10,9 +10,9 @@ textArea.addEventListener('input', (e) => {
   e.preventDefault();
   if (textArea.value.length > maxLength) {
     textArea.value = textArea.value.slice(0, maxLength);
-    textArea.style.border = '1px solid red';
+    textArea.style.border = '2px solid red';
   } else {
-    textArea.style.border = '1px solid black';
+    textArea.style.border = '2px solid black';
   }
   textLimit();
 });
