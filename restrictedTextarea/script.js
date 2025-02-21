@@ -12,7 +12,7 @@ textArea.addEventListener('input', (e) => {
     textArea.value = textArea.value.slice(0, maxLength);
     textArea.style.border = '2px solid red';
   } else {
-    textArea.style.border = '2px solid black';
+    textArea.style.border = '2px solid #c2c5cb';
   }
   textLimit();
 });
