@@ -26,14 +26,20 @@ body {
 .projects {
   color: #ebebfa;
   font-size: 16px;
-  border-left: 1px solid #ebebfa;
-  padding-inline-start: 1rem;
   margin-block: 1rem;
   font-family: "Raleway", serif;
+  max-width: 678.175px;
+  margin-inline: auto;
+}
+
+.project {
+  border-left: 1px solid #ebebfa;
+  margin-block: 1.5rem;
+  padding-inline-start: 1rem;
 }
 
 .projects p {
-  margin-block-start: .5rem;
+  margin-block: .5rem;
 }
 
 .projects a,
@@ -64,8 +70,10 @@ footer div a {
   align-items: center;
   font-size: 16px;
   font-family: "Inter", serif;
+  gap: .15rem;
 }
 
 footer a:hover {
   color: #d2d2e6;
+  text-decoration: none;
 }
