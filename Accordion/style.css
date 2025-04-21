@@ -1,3 +1,62 @@
-.active {
-  display: block;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  margin-block-start: 3rem;
+}
+
+main>div {
+  text-align: center;
+  margin-block-end: .25rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 1.5rem;
+}
+
+.accordion-item {
+  margin-block-end: 2rem;
+  border-block-end: 1px solid #ebebfa;
+}
+
+.faq-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 1rem;
+}
+
+.faq-flex h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: calc(1rem + .5vw);
+}
+
+.accordion {
+  cursor: pointer;
+}
+
+.faq-flex i {
+  width: 10%;
+  display: contents;
+}
+
+.answer {
+  margin-block-end: 1rem;
+  font-family: "Manrope", sans-serif;
 }
